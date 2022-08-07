@@ -1,0 +1,46 @@
+.nav-logo {
+  background: url('../../assets/images/supp-topnav-logo.svg');
+  display: block;
+  background-position: center;
+  height: 50px;
+  width: 150px;
+  background-repeat: no-repeat;
+}
+
+.nav-icons {
+  width: 40px;
+  height: 40px;
+  color: $separator-color;
+  transition: all 0.4s;
+}
+
+.active {
+  transform: scale(1.25);
+  position: relative;
+  color: $gradient-color-1;
+  font-weight: 900;
+}
+
+.notification {
+  position: relative;
+
+  span {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 0;
+    right: 0;
+    border-radius: 10px;
+
+    background-color: red;
+  }
+}
+
+.search {
+  min-width: 400px;
+}
+
+.profile {
+  min-width: 400px;
+}
