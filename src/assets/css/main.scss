@@ -1,0 +1,15 @@
+@import './reset.scss';
+@import './variables';
+
+body{
+    background: $background-color;
+}
+
+.nav-logo{
+    background: url('../../assets/images/supp-topnav-logo.svg');
+    display: block;
+    background-position: center;
+    height: 50px;
+    width: 150px;
+    background-repeat: no-repeat;
+}
