@@ -12,8 +12,20 @@ body {
 .custom-card {
   border-radius: max(0px, min(16px, (100% - 10px + 1px) * 9999)) / 16px;
 }
+
 .container {
   @include respond-above(xl) {
     max-width: 90vw !important;
+  }
+}
+
+.upload-video-btn {
+  color: #1464d9 !important;
+  background-color: white !important;
+  // transition: all 0.05s;
+
+  &:hover {
+    background-color: #1464d9 !important;
+    color: white !important;
   }
 }

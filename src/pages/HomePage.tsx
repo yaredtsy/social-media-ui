@@ -3,6 +3,7 @@ import {Col, Container, Row} from 'react-bootstrap';
 
 import CustomeCard from 'componetns/commones/custome-card';
 import MyProfile from 'componetns/homepage/my-profile';
+import PostAction from 'componetns/commones/post-action';
 
 const HomePage = () => {
   return (
@@ -13,7 +14,7 @@ const HomePage = () => {
         </Col>
         <Col lg={6}>
           {' '}
-          <CustomeCard>olla </CustomeCard>
+          <PostAction />
         </Col>
         <Col lg={3}>
           <CustomeCard>yow </CustomeCard>
