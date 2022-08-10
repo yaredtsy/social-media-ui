@@ -1,0 +1,24 @@
+.user-avatar {
+  .avatar {
+    width: 50px;
+    height: 50px;
+  }
+  .md {
+    width: 75px !important;
+    height: 75px !important;
+  }
+  .isonline {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 35%;
+      height: 35%;
+      background-color: rgb(63, 189, 46);
+      border-radius: 100px;
+      border: 2px solid white;
+    }
+  }
+}

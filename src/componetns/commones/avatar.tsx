@@ -1,14 +1,15 @@
 import React, {FC, useEffect, useState} from 'react';
 import placeholder from 'assets/images/supp.jpg';
-
+import classNames from 'classnames';
 interface AvatarProps {
   className?: string;
   image?: string;
   title?: string;
   subtitle?: string;
   isonline?: boolean;
+  md?: boolean;
 }
-const Avatar: FC<AvatarProps> = ({className, image, title, subtitle, isonline}) => {
+const Avatar: FC<AvatarProps> = ({className, image, title, subtitle, isonline, md}) => {
   const [classState, setClassState] = useState<string>('');
 
   useEffect(() => {
@@ -17,12 +18,12 @@ const Avatar: FC<AvatarProps> = ({className, image, title, subtitle, isonline}) 
     }
   }, []);
   return (
-    <div className={'  bg-white d-flex '}>
-      <div className={isonline ? 'isonline avatar' : 'avatar'}>
+    <div className={classNames('  bg-white d-flex user-avatar' + classState, {md: md})}>
+      <div className={classNames('avatar', {isonline: isonline}, {md: md})}>
         <img
           src={image ? image : placeholder}
           alt={'profile'}
-          className={'rounded-circle avatar  img-fluid' + classState}
+          className={classNames('rounded-circle avatar  img-fluid', {md: md})}
         />
       </div>
       <div className="d-flex flex-column ms-5 justify-content-center">
