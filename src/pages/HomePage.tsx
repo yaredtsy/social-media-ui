@@ -1,9 +1,11 @@
 import React from 'react';
 import {Col, Container, Row} from 'react-bootstrap';
 
-import CustomeCard from 'componetns/commones/custome-card';
 import MyProfile from 'componetns/homepage/my-profile';
 import PostAction from 'componetns/commones/post-action';
+
+import TopTranding from 'componetns/homepage/top-tranding';
+import PostDisplay from 'componetns/commones/post-display';
 
 const HomePage = () => {
   return (
@@ -13,11 +15,11 @@ const HomePage = () => {
           <MyProfile />
         </Col>
         <Col lg={6}>
-          {' '}
           <PostAction />
+          <PostDisplay />
         </Col>
         <Col lg={3}>
-          <CustomeCard>yow </CustomeCard>
+          <TopTranding />
         </Col>
       </Row>
     </Container>

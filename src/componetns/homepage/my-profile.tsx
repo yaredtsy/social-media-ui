@@ -8,7 +8,7 @@ const MyProfile = () => {
   return (
     <CustomeCard>
       <Card.Header className="bg-white ps-0 border-0 mt-2 ms-4">
-        <Avatar title="hello" subtitle="ds" isonline md />
+        <Avatar title="yared tsegaye" subtitle="Photographer" isonline md />
       </Card.Header>
       <Card.Body className="my-4">
         <div className="d-flex justify-content-evenly border-top border-bottom">
