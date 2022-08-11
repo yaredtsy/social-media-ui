@@ -5,6 +5,10 @@
   height: 50px;
   width: 150px;
   background-repeat: no-repeat;
+  @include respond-below(xl) {
+    width: 100px;
+    height: 40px;
+  }
 }
 
 .nav-icons {
@@ -12,6 +16,11 @@
   height: 40px;
   color: $separator-color;
   transition: all 0.4s;
+
+  @include respond-below(xl) {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .active {
@@ -39,8 +48,16 @@
 
 .search {
   min-width: 400px;
+
+  @include respond-below(xl) {
+    min-width: 300px;
+  }
 }
 
 .profile {
   min-width: 400px;
+
+  @include respond-below(xl) {
+    min-width: 300px;
+  }
 }

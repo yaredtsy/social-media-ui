@@ -30,7 +30,7 @@ const Avatar: FC<AvatarProps> = ({className, image, title, subtitle, isonline, m
           className={classNames('rounded-circle avatar  img-fluid', {md: md})}
         />
       </div>
-      <div className="d-flex flex-column ms-5 justify-content-center">
+      <div className="d-flex flex-column ms-xxl-5 ms-xl-2 justify-content-center">
         {title && (
           <span className="d-flex">
             <span className="fw-bold fs-4 ">{title}</span>

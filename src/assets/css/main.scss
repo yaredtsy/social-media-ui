@@ -15,7 +15,7 @@ body {
 
 .container {
   @include respond-above(xl) {
-    max-width: 90vw !important;
+    max-width: 80vw !important;
   }
 }
 
@@ -28,4 +28,9 @@ body {
     background-color: #1464d9 !important;
     color: white !important;
   }
+}
+
+.post-container {
+  border-radius: 20px;
+  overflow: hidden;
 }
