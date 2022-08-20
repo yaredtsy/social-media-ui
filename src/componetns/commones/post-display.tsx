@@ -10,7 +10,7 @@ import postImage from 'assets/images/pic1.png';
 
 const PostDisplay = () => {
   return (
-    <CustomeCard className="my-lg-5 my-md-3">
+    <CustomeCard className="my-lg-5 my-3">
       <Card.Header className="bg-white ps-0 border-0 mt-2">
         <div className="d-flex justify-content-between align-items-center">
           <Avatar title="Yared karen" subtitle="@karen - 2h ago" />

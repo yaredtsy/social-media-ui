@@ -13,6 +13,11 @@
     width: 70px;
     height: 40px;
   }
+
+  @include respond-below(sm) {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .nav-icons {
@@ -56,6 +61,10 @@
   @include respond-below(xl) {
     min-width: 300px;
   }
+
+  @include respond-below(sm) {
+    min-width: 150px;
+  }
 }
 
 .profile {
@@ -66,6 +75,9 @@
   }
   @include respond-below(lg) {
     min-width: 50vw;
+  }
+  @include respond-below(sm) {
+    min-width: 10vw;
   }
 }
 

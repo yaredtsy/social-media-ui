@@ -8,12 +8,12 @@ import CustomeCard from './custome-card';
 const PostAction = () => {
   return (
     <CustomeCard>
-      <Card.Body>
-        <div className="d-flex">
+      <Card.Body className="m-0">
+        <div className="d-flex ">
           <div>
             <Avatar />
           </div>
-          <div className="w-100">
+          <div className="w-100 ps-3">
             <FloatingLabel controlId="floatingTextarea2" label="Comments">
               <Form.Control as="textarea" placeholder="Leave a comment here" style={{height: '100px'}} />
             </FloatingLabel>
@@ -21,8 +21,8 @@ const PostAction = () => {
         </div>
       </Card.Body>
       <Card.Footer className="bg-white ">
-        <div className="d-flex justify-content-evenly mt-4">
-          <Button className="w-100 rounded-pill  mx-3 py-3 fs-5 d-flex justify-content-center align-items-center">
+        <div className="d-flex justify-content-evenly mt-4 flex-lg-column flex-md-column flex-column  flex-xl-row">
+          <Button className="w-100 rounded-pill  mx-3 py-3 fs-5 d-flex justify-content-center align-items-center mb-3 mb-xl-0">
             <RiImageAddLine className="fs-3 me-3" />
             <span>Upload Image</span>
           </Button>

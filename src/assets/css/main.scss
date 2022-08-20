@@ -47,6 +47,30 @@ body {
   }
 }
 
+.disable-lg {
+  @include respond-below(lg) {
+    display: none;
+  }
+}
+
 .mb-6 {
   margin-bottom: 6rem !important;
+}
+
+.fs-5 {
+  @include respond-below(lg) {
+    font-size: 1.15rem !important;
+  }
+}
+
+.fs-4 {
+  @include respond-below(lg) {
+    font-size: 1.25rem !important;
+  }
+}
+
+.fs-6 {
+  @include respond-below(lg) {
+    font-size: 0.9rem !important;
+  }
 }
