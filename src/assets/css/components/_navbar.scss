@@ -76,7 +76,7 @@
   @include respond-below(lg) {
     min-width: 50vw;
   }
-  @include respond-below(sm) {
+  @include respond-below(md) {
     min-width: 10vw;
   }
 }

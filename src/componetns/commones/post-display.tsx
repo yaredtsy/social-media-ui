@@ -2,11 +2,17 @@ import React from 'react';
 
 import {BsThreeDotsVertical} from 'react-icons/bs';
 
-import CustomeCard from 'componetns/commones/custome-card';
 import {Button, Card, Image} from 'react-bootstrap';
-import Avatar from './avatar';
+import {BsHeart, BsHeartFill} from 'react-icons/bs';
 
+import {FiMessageSquare} from 'react-icons/fi';
+import {RiShareForwardLine} from 'react-icons/ri';
+
+//
+import CustomeCard from 'componetns/commones/custome-card';
+import Avatar from './avatar';
 import postImage from 'assets/images/pic1.png';
+import AmountCard from './amount-card';
 
 const PostDisplay = () => {
   return (
@@ -27,12 +33,28 @@ const PostDisplay = () => {
           <Image src={postImage} alt="" className="" fluid />
         </div>
       </Card.Body>
-      <Card.Footer className="bg-white border-0 ">
+      <Card.Footer className="bg-white border-0 px-0">
         <div className="d-flex">
-          <div>Likes</div>
-          <div>Supps</div>
-          <div>Share</div>
-          <div className="ms-auto">don</div>
+          {/* <div className="d-flex justify-content-center align-items-center mx-2 text-muted">
+            <BsHeart className="fs-3" />
+            <span className="fs-5 ms-1"> 16 Likes</span>
+          </div> */}
+
+          <div className="d-flex justify-content-center align-items-center mx-2 color-theme">
+            <BsHeartFill className="fs-3" />
+            <span className="fs-5 ms-1"> 16 Likes</span>
+          </div>
+          <div className="d-flex justify-content-center align-items-center mx-2 text-muted">
+            <FiMessageSquare className="fs-3" />
+            <span className="fs-5 ms-1">13 Supps</span>
+          </div>
+          <div className="d-flex justify-content-center align-items-center mx-2 text-muted">
+            <RiShareForwardLine className="fs-3" />
+            <span className="fs-5 ms-1">Share</span>
+          </div>
+          <div className="ms-auto">
+            <AmountCard />
+          </div>
         </div>
       </Card.Footer>
     </CustomeCard>
