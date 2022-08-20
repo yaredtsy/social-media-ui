@@ -5,10 +5,12 @@
   height: 40px;
   width: 150px;
   background-repeat: no-repeat;
+
   @include respond-below(xl) {
     width: 100px;
     height: 40px;
   }
+
   @include respond-below(md) {
     width: 70px;
     height: 40px;
