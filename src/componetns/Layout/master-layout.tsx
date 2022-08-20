@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Suspense} from 'react';
 
 import NavBar from 'componetns/nav-bar/nav-bar';
 import {Outlet} from 'react-router-dom';
@@ -11,7 +11,9 @@ const MasterLayout = ({...props}) => {
         <NavBar />
       </header>
       <main className="mt-5">
-        <Outlet />
+        <Suspense fallback={<>Loading</>}>
+          <Outlet />
+        </Suspense>
       </main>
       <footer>
         <MobileNavBar />
