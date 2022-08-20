@@ -21,14 +21,14 @@
 }
 
 .nav-icons {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   color: $separator-color;
   transition: all 0.4s;
 
   @include respond-below(xl) {
-    width: 30px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
   }
 }
 

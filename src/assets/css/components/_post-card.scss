@@ -1,0 +1,15 @@
+.upload-video-btn {
+  color: #1464d9 !important;
+  background-color: white !important;
+  // transition: all 0.05s;
+
+  &:hover {
+    background-color: #1464d9 !important;
+    color: white !important;
+  }
+}
+
+.post-container {
+  border-radius: 20px;
+  overflow: hidden;
+}

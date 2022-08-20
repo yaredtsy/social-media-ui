@@ -1,0 +1,12 @@
+.custom-card {
+  border-radius: max(0px, min(16px, (100% - 10px + 1px) * 9999)) / 16px;
+}
+
+.container {
+  @include respond-above(xl) {
+    max-width: 85vw !important;
+  }
+  @include respond-below(xl) {
+    max-width: 95vw !important;
+  }
+}

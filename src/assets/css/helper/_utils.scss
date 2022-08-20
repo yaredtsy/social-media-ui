@@ -1,0 +1,15 @@
+.disable-md {
+  @include respond-below(md) {
+    display: none;
+  }
+}
+
+.disable-lg {
+  @include respond-below(lg) {
+    display: none;
+  }
+}
+
+.mb-6 {
+  margin-bottom: 6rem !important;
+}
