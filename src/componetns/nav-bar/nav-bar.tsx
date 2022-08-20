@@ -43,7 +43,7 @@ const NavBar = () => {
             </div>
           </Nav.Link>
         </Nav>
-        <Nav className="me-5 profile d-flex flex-row">
+        <Nav className="me-0 me-lg-5 profile d-flex flex-row">
           <div className="ms-auto me-3 my-auto">
             <AmountCard text="120 SUPPS" />
           </div>
