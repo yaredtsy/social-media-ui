@@ -6,8 +6,11 @@
 @import './components/amount-card';
 @import './colors';
 
+// @import url('../font/Roboto-Regular.ttf');
+
 body {
   background: $background-color;
+  // font-family: 'Roboto', sans-serif;
 }
 .custom-card {
   border-radius: max(0px, min(16px, (100% - 10px + 1px) * 9999)) / 16px;
@@ -15,7 +18,10 @@ body {
 
 .container {
   @include respond-above(xl) {
-    max-width: 80vw !important;
+    max-width: 85vw !important;
+  }
+  @include respond-below(xl) {
+    max-width: 95vw !important;
   }
 }
 
@@ -33,4 +39,14 @@ body {
 .post-container {
   border-radius: 20px;
   overflow: hidden;
+}
+
+.disable-md {
+  @include respond-below(md) {
+    display: none;
+  }
+}
+
+.mb-6 {
+  margin-bottom: 6rem !important;
 }
