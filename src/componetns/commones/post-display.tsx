@@ -13,13 +13,14 @@ import CustomeCard from 'componetns/commones/custome-card';
 import Avatar from './avatar';
 import postImage from 'assets/images/pic1.png';
 import AmountCard from './amount-card';
+import CommentRank from './post/comment-rank';
 
 const PostDisplay = () => {
   return (
     <CustomeCard className="my-lg-5 my-3">
       <Card.Header className="bg-white ps-0 border-0 mt-2">
         <div className="d-flex justify-content-between align-items-center">
-          <Avatar title="Yared karen" subtitle="@karen - 2h ago" />
+          <Avatar title="Yared karen" subtitle="@karen - 2h ago" md />
           <Button variant="light" className="rounded-circle">
             <BsThreeDotsVertical className="fs-2 text-muted" />
           </Button>
@@ -34,28 +35,35 @@ const PostDisplay = () => {
         </div>
       </Card.Body>
       <Card.Footer className="bg-white border-0 px-0">
-        <div className="d-flex">
-          {/* <div className="d-flex justify-content-center align-items-center mx-2 text-muted">
+        <>
+          <div className="d-flex">
+            {/* <div className="d-flex justify-content-center align-items-center mx-2 text-muted">
             <BsHeart className="fs-3" />
             <span className="fs-5 ms-1"> 16 Likes</span>
           </div> */}
 
-          <div className="d-flex justify-content-center align-items-center mx-2 color-theme">
-            <BsHeartFill className="fs-3" />
-            <span className="fs-5 ms-1"> 16 Likes</span>
+            <div className="d-flex justify-content-center align-items-center me-2 me-lg-4 color-theme">
+              <BsHeartFill className="fs-3" />
+              <span className="fs-4 ms-1"> 16 Likes</span>
+            </div>
+            <div className="d-flex justify-content-center align-items-center  mx-2 mx-lg-4 text-muted">
+              <FiMessageSquare className="fs-3" />
+              <span className="fs-4 ms-1">13 Supps</span>
+            </div>
+            <div className="d-flex justify-content-center align-items-center mx-lg-4 mx-2 text-muted">
+              <RiShareForwardLine className="fs-3" />
+              <span className="fs-4 ms-1">Share</span>
+            </div>
+            <div className="ms-auto">
+              <AmountCard text="30K SUPPS" md />
+            </div>
           </div>
-          <div className="d-flex justify-content-center align-items-center mx-2 text-muted">
-            <FiMessageSquare className="fs-3" />
-            <span className="fs-5 ms-1">13 Supps</span>
+          <div className="d-flex mt-5 scrollable">
+            <CommentRank rank={1} text={'300 SUPP'} className="me-1 me-lg-4 " />
+            <CommentRank rank={2} text={'300 SUPP'} className="mx-1 mx-lg-2   mx-lg-4 bg-color-grey" inactive />
+            <CommentRank rank={3} text={'300 SUPP'} className="mx-1 mx-lg-4  bg-color-grey" inactive />
           </div>
-          <div className="d-flex justify-content-center align-items-center mx-2 text-muted">
-            <RiShareForwardLine className="fs-3" />
-            <span className="fs-5 ms-1">Share</span>
-          </div>
-          <div className="ms-auto">
-            <AmountCard text="120 SUPPS" md />
-          </div>
-        </div>
+        </>
       </Card.Footer>
     </CustomeCard>
   );

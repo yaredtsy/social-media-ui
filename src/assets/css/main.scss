@@ -18,3 +18,64 @@ body {
   background: $background-color;
   // font-family: 'Roboto', sans-serif;
 }
+
+.rank {
+  background-color: #1464d9;
+
+  &-1 {
+    background-image: url('../../assets/images/rank1.svg');
+    display: block;
+    background-position: center;
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    font-size: larger;
+    background-size: cover;
+  }
+  &-2 {
+    background-image: url('../../assets/images/rank2.svg');
+    display: block;
+    background-position: center;
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    font-size: larger;
+    background-size: cover;
+  }
+  &-3 {
+    background-image: url('../../assets/images/rank3.svg');
+    display: block;
+    background-position: center;
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    font-size: larger;
+    background-size: cover;
+  }
+
+  .user-avatar {
+    .avatar {
+      @include respond-below(sm) {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+  min-width: 170px;
+  @include respond-below(sm) {
+    min-width: 150px;
+  }
+  @include respond-below(xs) {
+    min-width: 130px;
+  }
+}
+
+.scrollable {
+  overflow: scroll;
+  width: 100%;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
