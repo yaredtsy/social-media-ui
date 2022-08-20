@@ -11,7 +11,7 @@ const PostAction = () => {
       <Card.Body className="m-0">
         <div className="d-flex ">
           <div>
-            <Avatar />
+            <Avatar md />
           </div>
           <div className="w-100 ps-3">
             <Form.Control as="textarea" placeholder="Say something...." className="post-text  p-3 border-theme" />
