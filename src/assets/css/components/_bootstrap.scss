@@ -4,10 +4,10 @@
 }
 
 .container {
-  @include respond-above(xl) {
-    max-width: 85vw !important;
+  @include respond-above(xxl) {
+    max-width: 75vw !important;
   }
-  @include respond-below(xl) {
+  @include respond-below(xxl) {
     max-width: 95vw !important;
   }
 }
