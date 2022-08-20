@@ -3,6 +3,7 @@ import {FC, useEffect, useState} from 'react';
 import classNames from 'classnames';
 import {Button} from 'react-bootstrap';
 
+//
 import placeholder from 'assets/images/tempo/profile-pic-l.jpg';
 
 interface AvatarProps {
@@ -31,21 +32,21 @@ const Avatar: FC<AvatarProps> = ({className, image, title, subtitle, isonline, m
         <img
           src={image ? image : placeholder}
           alt={'profile'}
-          className={classNames('rounded-circle avatar  img-fluid', {md: md})}
+          className={classNames('rounded-circle avatar img-fluid', {md: md})}
         />
       </div>
-      <div className="d-flex flex-column ms-xxl-3 ms-md-2 justify-content-center">
+      <div className="d-flex flex-column ms-lg-3 ms-2 justify-content-center">
         {title && (
           <span className="d-flex">
-            <span className="fw-bold fs-5 ">{title}</span>
+            <span className="fw-bold fs-4 ">{title}</span>
             {showFollowing && (
               <>
                 {1 != 1 ? (
-                  <Button size="sm" className="ms-3 text-decoration-none fw-bold fs-6 my-auto" variant="link">
+                  <Button size="sm" className="ms-3 text-decoration-none fw-bold fs-5 my-auto" variant="link">
                     Follow
                   </Button>
                 ) : (
-                  <Button size="sm" className="ms-3 fw-bold fs-6 my-auto" variant="outline-primary">
+                  <Button size="sm" className="ms-3 fw-bold fs-5 my-auto" variant="outline-primary">
                     Following
                   </Button>
                 )}
@@ -53,10 +54,10 @@ const Avatar: FC<AvatarProps> = ({className, image, title, subtitle, isonline, m
             )}
           </span>
         )}
-        {subtitle && <span className="text-muted fs-6">{subtitle}</span>}
+        {subtitle && <span className="text-muted fs-5">{subtitle}</span>}
         {showFollower && (
           <span className="d-flex">
-            <span className="text-muted fs-6">
+            <span className="text-muted fs-5">
               <span className="fw-bold">98</span> Followers - <span className="fw-bold">98</span> Donated
             </span>
           </span>
