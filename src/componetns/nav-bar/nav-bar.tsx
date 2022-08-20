@@ -45,7 +45,7 @@ const NavBar = () => {
         </Nav>
         <Nav className="me-5 profile d-flex flex-row">
           <div className="ms-auto me-3 my-auto">
-            <AmountCard />
+            <AmountCard text="120 SUPPS" />
           </div>
           <Nav.Link href="#action2">
             <Avatar />

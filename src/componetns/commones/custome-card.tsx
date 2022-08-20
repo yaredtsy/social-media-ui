@@ -8,7 +8,7 @@ interface CustomeCardProps extends BsPrefixProps, React.HTMLAttributes<HTMLEleme
 }
 const CustomeCard: FC<CustomeCardProps> = ({children, className, ...props}) => {
   return (
-    <Card className={`shadow-sm bg-white py-4 px-4 border-0 custom-card ${className && className}`} {...props}>
+    <Card className={`bg-white py-4 px-4 border-0 custom-card ${className && className}`} {...props}>
       {children}
     </Card>
   );

@@ -1,5 +1,6 @@
 .custom-card {
   border-radius: max(0px, min(16px, (100% - 10px + 1px) * 9999)) / 16px;
+  box-shadow: 0px 0px 13px rgba(18, 31, 72, 0.051);
 }
 
 .container {
@@ -9,4 +10,8 @@
   @include respond-below(xl) {
     max-width: 95vw !important;
   }
+}
+
+.border-theme {
+  border-color: #f1f6fa !important;
 }

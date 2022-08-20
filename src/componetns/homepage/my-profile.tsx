@@ -11,14 +11,14 @@ const MyProfile = () => {
         <Avatar title="yared tsegaye" subtitle="Photographer" isonline md />
       </Card.Header>
       <Card.Body className="my-4">
-        <div className="d-flex justify-content-evenly border-top border-bottom">
-          <div className="follower-card d-flex flex-column w-100 border-end py-4 align-items-center">
+        <div className="d-flex justify-content-evenly border-top border-bottom border-theme">
+          <div className="follower-card d-flex flex-column w-100 border-end py-5 align-items-center border-theme ">
             <Link to="" className="text-decoration-none">
               <span className="fw-bold fs-4 color-theme text-decoration-none">298</span>
             </Link>
             <span className="text-muted fs-4 mt-2">Followers</span>
           </div>
-          <div className="follower-card d-flex flex-column w-100 py-4 align-items-center">
+          <div className="follower-card d-flex flex-column w-100 py-5 align-items-center">
             <Link to="" className="text-decoration-none">
               <span className="fw-bold fs-4 color-theme text-decoration-none">298</span>
             </Link>
@@ -26,7 +26,7 @@ const MyProfile = () => {
           </div>
         </div>
       </Card.Body>
-      <Card.Footer className="border-0 bg-white pt-4">
+      <Card.Footer className="border-0 bg-white">
         <div className="d-flex justify-content-center">
           <Link to="" className="fw-bold fs-4 text-decoration-none">
             View My Profile

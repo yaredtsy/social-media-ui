@@ -1,9 +1,20 @@
 import React from 'react';
+import className from 'classnames';
 
-const AmountCard = () => {
+interface AmountCardProps {
+  text: string;
+  md?: boolean;
+}
+
+const AmountCard: React.FC<AmountCardProps> = ({text}) => {
   return (
-    <div className="amount-card rounded-pill text-white fw-bold fs-6 d-flex justify-content-center align-items-center">
-      150 SUPP
+    <div
+      className={className(
+        'amount-card rounded-pill text-white fw-bold fs-6 d-flex justify-content-center align-items-center',
+        {md: 'amount-card-md'},
+      )}
+    >
+      {text}
     </div>
   );
 };

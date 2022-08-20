@@ -1,8 +1,9 @@
 @import './helper/mixins';
-@import './helper/reset';
-@import './helper/variables';
-@import './helper/colors';
 @import './helper/utils';
+
+@import './core/reset';
+@import './core/variables';
+@import './core/colors';
 
 @import './components/navbar';
 @import './components/user-avatar';

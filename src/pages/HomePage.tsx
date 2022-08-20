@@ -11,7 +11,7 @@ import Following from 'componetns/homepage/following';
 const HomePage = () => {
   return (
     <Container>
-      <Row className="gx-2 gx-lg-4  ">
+      <Row className="gx-xxl-5 gx-xl-4">
         <Col xl={3} lg={4} md={0} className="disable-md">
           <MyProfile />
           <Following />

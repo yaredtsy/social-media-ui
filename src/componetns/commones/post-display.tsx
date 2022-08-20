@@ -53,7 +53,7 @@ const PostDisplay = () => {
             <span className="fs-5 ms-1">Share</span>
           </div>
           <div className="ms-auto">
-            <AmountCard />
+            <AmountCard text="120 SUPPS" md />
           </div>
         </div>
       </Card.Footer>
