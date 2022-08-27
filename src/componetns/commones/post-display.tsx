@@ -9,6 +9,7 @@ import {FiMessageSquare} from 'react-icons/fi';
 import {RiShareForwardLine} from 'react-icons/ri';
 
 //components
+
 import CustomeCard from 'componetns/commones/custome-card';
 import Avatar from './avatar';
 import postImage from 'assets/images/pic1.png';
@@ -17,7 +18,9 @@ import CommentRank from './post/comment-rank';
 import classNames from 'classnames';
 import CommentCard from './post/comment-card';
 
-const PostDisplay = () => {
+interface PostDisplayProps {}
+
+const PostDisplay: React.FC<PostDisplayProps> = () => {
   const [activeCommentTab, setActiveCommentTab] = useState<number>(1);
 
   return (
@@ -100,7 +103,7 @@ const PostDisplay = () => {
               }}
             />
           </div>
-          <div>
+          <div className="pt-4">
             <CommentCard />
           </div>
         </>
