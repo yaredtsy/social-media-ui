@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import {BsThreeDotsVertical} from 'react-icons/bs';
 
@@ -8,14 +8,18 @@ import {BsHeart, BsHeartFill} from 'react-icons/bs';
 import {FiMessageSquare} from 'react-icons/fi';
 import {RiShareForwardLine} from 'react-icons/ri';
 
-//
+//components
 import CustomeCard from 'componetns/commones/custome-card';
 import Avatar from './avatar';
 import postImage from 'assets/images/pic1.png';
 import AmountCard from './amount-card';
 import CommentRank from './post/comment-rank';
+import classNames from 'classnames';
+import CommentCard from './post/comment-card';
 
 const PostDisplay = () => {
+  const [activeCommentTab, setActiveCommentTab] = useState<number>(1);
+
   return (
     <CustomeCard className="my-lg-5 my-3">
       <Card.Header className="bg-white ps-0 border-0 mt-2">
@@ -59,9 +63,45 @@ const PostDisplay = () => {
             </div>
           </div>
           <div className="d-flex mt-5 scrollable">
-            <CommentRank rank={1} text={'300 SUPP'} className="me-1 me-lg-4 " />
-            <CommentRank rank={2} text={'300 SUPP'} className="mx-1 mx-lg-2   mx-lg-4 bg-color-grey" inactive />
-            <CommentRank rank={3} text={'300 SUPP'} className="mx-1 mx-lg-4  bg-color-grey" inactive />
+            <CommentRank
+              rank={1}
+              text={'300 SUPP'}
+              className={classNames('me-1 me-lg-4 ', {
+                'rank-active': activeCommentTab == 1,
+                'bg-color-grey': activeCommentTab != 1,
+              })}
+              inactive={activeCommentTab != 1}
+              onClick={() => {
+                setActiveCommentTab(1);
+              }}
+            />
+            <CommentRank
+              rank={2}
+              text={'300 SUPP'}
+              className={classNames('mx-1 mx-lg-2 mx-lg-4 ', {
+                'rank-active': activeCommentTab == 2,
+                'bg-color-grey': activeCommentTab != 2,
+              })}
+              inactive={activeCommentTab != 2}
+              onClick={() => {
+                setActiveCommentTab(2);
+              }}
+            />
+            <CommentRank
+              rank={3}
+              text={'300 SUPP'}
+              className={classNames('mx-1 mx-lg-4', {
+                'rank-active': activeCommentTab == 3,
+                'bg-color-grey': activeCommentTab != 3,
+              })}
+              inactive={activeCommentTab != 3}
+              onClick={() => {
+                setActiveCommentTab(3);
+              }}
+            />
+          </div>
+          <div>
+            <CommentCard />
           </div>
         </>
       </Card.Footer>

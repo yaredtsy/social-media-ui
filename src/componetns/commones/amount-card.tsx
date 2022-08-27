@@ -10,7 +10,7 @@ const AmountCard: React.FC<AmountCardProps> = ({text}) => {
   return (
     <div
       className={className(
-        'amount-card rounded-pill text-white fw-bold fs-6 d-flex justify-content-center align-items-center',
+        'amount-card rounded-pill text-white fw-bolder fs-6 d-flex justify-content-center align-items-center',
         {md: 'amount-card-md'},
       )}
     >

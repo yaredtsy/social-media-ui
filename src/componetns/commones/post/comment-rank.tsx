@@ -10,22 +10,24 @@ interface CommentRankProps {
   rank: number;
   className?: string;
   inactive?: boolean;
+  onClick: React.MouseEventHandler<HTMLDivElement>;
 }
 
-const CommentRank: React.FC<CommentRankProps> = ({image, text, rank, className, inactive}) => {
+const CommentRank: React.FC<CommentRankProps> = ({image, text, rank, className, inactive, onClick}) => {
   return (
     <div
       className={classNames(
-        'user-avatar d-flex rank rounded-pill ps-2 pe-4 py-1 sm align-items-center',
+        'user-avatar d-flex rank rounded-pill ps-2 pe-2 py-1 sm align-items-center mouse-pointer ',
         className && className,
       )}
+      onClick={onClick}
     >
       <div className="avatar rounded-circle sm">
         <img src={image ? image : placeholder} alt="rank1" className="rounded-circle avatar  img-fluid sm" />
       </div>
       <div className="d-flex ms-1 ms-md-3 flex-column">
         <div className="d-flex justify-content-center align-items-center">
-          <div className={`rank-${rank} d-flex justify-content-center align-content-center fs-6 text-white`}>
+          <div className={`rank-${rank} d-flex justify-content-center align-items-center fs-6 text-white`}>
             {' '}
             {rank}{' '}
           </div>

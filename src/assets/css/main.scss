@@ -20,8 +20,9 @@ body {
 }
 
 .rank {
-  background-color: #1464d9;
-
+  &-active {
+    background-color: #1464d9;
+  }
   &-1 {
     background-image: url('../../assets/images/rank1.svg');
     display: block;
@@ -61,7 +62,7 @@ body {
       }
     }
   }
-  min-width: 170px;
+  min-width: 160px;
   @include respond-below(sm) {
     min-width: 150px;
   }
